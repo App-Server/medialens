@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Lens | Agência Digital</title>
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="app.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     
 </head>
@@ -12,7 +12,7 @@
 
     <main class="container">
         <header class="hero-section">
-            <img src="css/Logo-media-lens.png" alt="">
+            <img src="Logo-media-lens.png" alt="">
             <!-- <h1 class="title-main">MEDIA <span class="text-accent">LENS</span></h1> -->
             <p class="subtitle text-center">Inovação em Comunicação Visual e Marketing Digital</p>
         </header>
