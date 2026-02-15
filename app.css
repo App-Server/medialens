@@ -167,6 +167,10 @@
             color: var(--vibrant-purple);
         }
 
+        .subtitle {
+            color: var(--vibrant-purple);
+        }
+
         /* Ajuste para os cards que contém vídeos do Instagram */
         .video-card {
             padding: 15px !important; /* Menos espaço interno para o vídeo brilhar */
