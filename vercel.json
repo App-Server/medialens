@@ -7,11 +7,15 @@
   },
   "routes": [
     {
-      "src": "css/(.*)",
-      "dest": "/api/css/$1"
+      "src": "/app.css",
+      "dest": "/api/app.css"
     },
     {
-      "src": "(.*)",
+      "src": "/logo-media-lens.png",
+      "dest": "/api/logo-media-lens.png"
+    },
+    {
+      "src": "/(.*)",
       "dest": "/api/index.php"
     }
   ]
