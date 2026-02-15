@@ -1,0 +1,196 @@
+/* Suas Cores Oficiais */
+        :root {
+            --dark-purple: #3E065F;
+            --black: #000000;
+            --vibrant-purple: #8E05C2;
+            --text-light: #ffffff;
+        }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', sans-serif;
+            /* Fundo com gradiente radial para criar o efeito de luz no centro */
+            background: radial-gradient(circle at center, #1a0229 0%, var(--black) 100%);
+            background-attachment: fixed;
+            color: var(--text-light);
+            margin: 0;
+            min-height: 100vh;
+        }
+
+        /* Header / Hero */
+        .hero-section {
+            padding: 80px 0 40px 0;
+            text-align: center;
+        }
+
+        .title-main {
+            font-size: 4rem;
+            font-weight: 900;
+            letter-spacing: -2px;
+            color: #b5b5b5; /* Cinza claro como na imagem */
+            text-transform: uppercase;
+        }
+
+        .text-accent {
+            color: var(--vibrant-purple);
+            /* Brilho neon na palavra LENS */
+            text-shadow: 0 0 20px rgba(142, 5, 194, 0.8);
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.8;
+            font-weight: 300;
+        }
+
+        /* Card Nossa História (Efeito Vidro/Glow) */
+        .about-card {
+            background: rgba(62, 6, 95, 0.15);
+            border: 1px solid rgba(142, 5, 194, 0.3);
+            padding: 50px;
+            border-radius: 20px;
+            backdrop-filter: blur(15px);
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+            margin-bottom: 60px;
+            box-shadow: 0 0 100px rgba(142, 5, 194, 0.4);
+        }
+    
+
+        .section-title {
+            color: var(--vibrant-purple);
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .about-text {
+            font-size: 1.1rem;
+            color: #e0e0e0;
+            line-height: 1.7;
+        }
+
+        /* Botão Personalizado */
+        .btn-custom {
+            background: var(--vibrant-purple);
+            color: white;
+            border: none;
+            padding: 12px 35px;
+            border-radius: 50px;
+            font-weight: 600;
+            margin-top: 25px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-custom:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px var(--vibrant-purple);
+            color: white;
+        }
+
+        /* Container do Vídeo com Glow Roxo intenso */
+        .video-wrapper {
+            position: relative;
+            border-radius: 20px;
+            padding: 3px;
+            background: rgba(142, 5, 194, 0.2);
+            /* O "Glow" em volta do vídeo */
+            box-shadow: 0 0 100px rgba(142, 5, 194, 0.4);
+            margin-bottom: 100px;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 18px;
+            background: #000;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* Rodapé */
+        footer {
+            padding: 40px 0;
+            text-align: center;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        /* Estilo dos Cards de Serviço */
+        .service-card {
+            background: rgba(62, 6, 95, 0.1);
+            border: 1px solid rgba(142, 5, 194, 0.2);
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            height: 100%;
+            transition: all 0.4s ease;
+            backdrop-filter: blur(5px);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            background: rgba(142, 5, 194, 0.15);
+            border-color: var(--vibrant-purple);
+            box-shadow: 0 10px 30px rgba(142, 5, 194, 0.3);
+        }
+
+        .service-card h3 {
+            color: var(--vibrant-purple);
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .service-card p {
+            color: #bbb;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .card-icon {
+            font-size: 2.5rem;
+            color: white;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .nossos-serviços {
+            color: var(--vibrant-purple);
+        }
+
+        /* Ajuste para os cards que contém vídeos do Instagram */
+        .video-card {
+            padding: 15px !important; /* Menos espaço interno para o vídeo brilhar */
+        }
+
+        .instagram-embed-container {
+            position: relative;
+            width: 100%;
+            height: 450px; /* Altura ideal para Reels em cards */
+            overflow: hidden;
+            border-radius: 12px;
+            background: #000;
+        }
+
+        .instagram-embed-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .service-card h5 {
+            color: var(--vibrant-purple);
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
