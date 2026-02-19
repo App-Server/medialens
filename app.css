@@ -18,7 +18,7 @@
 
         /* Header / Hero */
         .hero-section {
-            padding: 80px 0 40px 0;
+            padding: 20px 0 40px 0;
             text-align: center;
         }
 
@@ -37,9 +37,10 @@
         }
 
         .subtitle {
-            font-size: 1.2rem;
+            font-size: 2rem;
             opacity: 0.8;
             font-weight: 300;
+            color: white;
         }
 
         /* Card Nossa História (Efeito Vidro/Glow) */
@@ -198,3 +199,124 @@
             font-size: 0.9rem;
             letter-spacing: 1px;
         }
+
+       /* Garante que o fundo da navbar seja visível */
+.custom-navbar {
+    /* background: rgba(0, 0, 0, 0.9) !important; */
+    backdrop-filter: blur(15px);
+    z-index: 1050; 
+}
+
+/* Força os links a serem brancos */
+.custom-navbar .nav-link {
+    color: #ffffff !important; 
+    opacity: 0.8;
+    text-align: center;
+}
+
+.custom-navbar .nav-link:hover {
+    opacity: 1;
+    color: var(--vibrant-purple) !important;
+}
+
+/* --- CORREÇÃO DO BOTÃO DE CONTATO --- */
+.btn-contact-nav {
+    background-color: var(--vibrant-purple) !important;
+    color: white !important;
+    padding: 10px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+    border: none;
+}
+
+.btn-contact-nav:hover {
+    box-shadow: 0 0 20px var(--vibrant-purple);
+    transform: scale(1.05);
+}
+
+/* --- CORREÇÃO DO HAMBÚRGUER (LINHAS BRANCAS) --- */
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.navbar-toggler-icon {
+    /* SVG alterado para Stroke Branco (rgb 255, 255, 255) */
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background: rgba(20, 0, 30, 0.98); /* Roxo bem escuro para o menu mobile */
+        padding: 20px;
+        border-radius: 15px;
+        margin-top: 10px;
+        border: 1px solid var(--vibrant-purple);
+    }
+    
+    .nav-contact {
+        text-align: center;
+        margin-top: 15px;
+    }
+}
+
+/* Estilo para a Seção Sobre */
+#sobre {
+    /* background-color: var(--black); */
+    color: white;
+    overflow: hidden;
+}
+
+/* Botão "Fale com um especialista" */
+.btn-specialist {
+   background-color: var(--vibrant-purple) !important;
+    color: white !important;
+    padding: 10px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+    border: none;
+}
+
+.btn-specialist:hover {
+    box-shadow: 0 0 20px var(--vibrant-purple);
+    transform: scale(1.05);
+
+/* Container do Mascote com brilho atrás */
+.mascot-container {
+    position: relative;
+    display: inline-block;
+}
+
+.glow-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background: radial-gradient(circle, rgba(142, 5, 194, 0.6) 0%, rgba(0, 0, 0, 0) 70%);
+    z-index: 1;
+    filter: blur(30px);
+}
+
+.mascot-img {
+    position: relative;
+    z-index: 2;
+    max-height: 500px;
+    /* Adiciona uma sombra suave para o mascote não parecer "colado" */
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.5));
+}
+
+/* Ajuste Responsivo */
+@media (max-width: 991px) {
+    .about-content {
+        text-align: center;
+    }
+    .mascot-img {
+        max-height: 350px;
+        margin-top: 30px;
+    }
+}
