@@ -153,6 +153,13 @@
             font-weight: 700;
         }
 
+        .service-card h1 {
+            color: var(--vibrant-purple);
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
         .service-card p {
             color: #bbb;
             font-size: 0.95rem;
@@ -325,4 +332,30 @@
 
 .quem-somos {
     color: #5F06E9;
+}
+
+/* Container que mantém a proporção da imagem sem cortar */
+.image-container-responsive {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000; /* Fundo preto caso a imagem seja menor */
+}
+
+/* Garante que a imagem preencha o card mas respeite a altura automática no mobile */
+.image-container-responsive img {
+    width: 100%;
+    height: auto; /* Deixa a altura livre para não achatar ou cortar */
+    object-fit: contain; /* Garante que a imagem inteira apareça */
+}
+
+/* Ajuste de espaçamento para os cards no Mobile */
+@media (max-width: 767px) {
+    .video-card {
+        margin-bottom: 20px;
+        /* Adiciona um brilho sutil para destacar os cards no mobile */
+        box-shadow: 0 0 15px rgba(142, 5, 194, 0.3); 
+    }
 }
