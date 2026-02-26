@@ -359,3 +359,57 @@
         box-shadow: 0 0 15px rgba(142, 5, 194, 0.3); 
     }
 }
+
+/* Estilo específico para os cards de tráfego */
+.traffic-card {
+    border: 1px solid rgba(142, 5, 194, 0.2) !important;
+    background: linear-gradient(145deg, rgba(62, 6, 95, 0.2) 0%, rgba(0, 0, 0, 0.4) 100%) !important;
+    padding: 40px !important;
+    text-align: left !important; /* Alinhamento à esquerda fica mais executivo para listas */
+}
+
+.traffic-list li {
+    color: white;
+    margin-bottom: 12px;
+    font-size: 1.05rem;
+    display: flex;
+    align-items: center;
+}
+
+.traffic-card .card-icon {
+    font-size: 3rem;
+    background: linear-gradient(to right, #ffffff, var(--vibrant-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-accent {
+    color: var(--vibrant-purple) !important;
+}
+
+.video-short-container {
+    position: relative;
+    width: 280px;      /* Largura fixa de um celular no desktop */
+    height: 500px;     /* Altura proporcional ao formato 9:16 */
+    margin: 0 auto;    /* Centraliza o vídeo na coluna */
+    overflow: hidden;
+    border-radius: 20px;
+    border: 3px solid #8E05C2; /* Borda roxa da MediaLens */
+    box-shadow: 0 0 20px rgba(142, 5, 194, 0.3);
+    background: #000;
+}
+
+/* O vídeo preenche exatamente a moldura acima */
+.video-player-short {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que o vídeo não fique com faixas pretas */
+}
+
+/* Ajuste para telas bem pequenas (celulares antigos) */
+@media (max-width: 350px) {
+    .video-short-container {
+        width: 230px;
+        height: 410px;
+    }
+}
