@@ -460,3 +460,39 @@
         max-height: 50px;
     }
 }
+
+/* Efeito de brilho atrás do ícone */
+.glow-icon {
+    position: relative;
+    display: inline-block;
+}
+
+.glow-icon::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, rgba(188, 0, 204, 0.4) 0%, rgba(0, 0, 0, 0) 70%);
+    z-index: -1;
+    filter: blur(15px);
+}
+
+/* Botão com efeito de neon */
+.btn-neon-purple {
+    background-color: transparent;
+    color: white !important;
+    border: 2px solid #bc00cc;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(188, 0, 204, 0.2);
+}
+
+.btn-neon-purple:hover {
+    background-color: #bc00cc;
+    box-shadow: 0 0 20px rgba(188, 0, 204, 0.6);
+    transform: translateY(-3px);
+}
