@@ -413,3 +413,50 @@
         height: 410px;
     }
 }
+
+/* Estilo da Seção de Logos */
+.text-purple {
+    color: #8E05C2;
+}
+
+.client-logo-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(142, 5, 194, 0.1);
+    border-radius: 15px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 140px; /* Mantém todas as logos na mesma altura */
+    transition: all 0.4s ease;
+}
+
+.client-logo-card img {
+    max-height: 80px;
+    width: auto;
+    filter: grayscale(100%) opacity(0.6); /* Logos discretas inicialmente */
+    transition: all 0.4s ease;
+}
+
+/* Efeito ao passar o mouse */
+.client-logo-card:hover {
+    background: rgba(142, 5, 194, 0.08);
+    border-color: #8E05C2;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(142, 5, 194, 0.2);
+}
+
+.client-logo-card:hover img {
+    filter: grayscale(0%) opacity(1); /* Ganha cor e destaque */
+}
+
+/* Ajuste para dispositivos móveis */
+@media (max-width: 767px) {
+    .client-logo-card {
+        height: 100px;
+        padding: 15px;
+    }
+    .client-logo-card img {
+        max-height: 50px;
+    }
+}
